@@ -1149,3 +1149,68 @@ footer{
 .exclam{
   text-align: center;
 }
+
+
+/*Popup error box*/
+
+.popup_box_error{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.popup_box_error{
+  width: 400px;
+  background: white;
+  text-align: center;
+  align-items: center;
+  padding: 40px;
+  border: 3px solid #6415ff;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+  z-index: 9999;
+  /* display: none; */
+}
+.popup_box_error i{
+  font-size: 25px;
+  color: #eb9447;
+  border: 5px solid #eb9447;
+  padding: 20px 40px;
+  border-radius: 50%;
+  margin: -10px 0 20px 0;
+}
+.popup_box_error h3{
+  font-size: 30px;
+  color: red;
+  margin-bottom: 5px;
+}
+.popup_box_error .popup_box_error label{
+  font-size: 23px;
+  color: #404040;
+}
+.popup_box_error{
+  margin: 40px 0 0 0;
+}
+
+
+.popup_box_error .btns-error .btnError{
+  background: #088dc2;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  margin-top: 51%;
+  padding: 10px 13px;
+}
+.popup_box_error .btns-error{
+  margin-left: 20px;
+  /* background: #ff3333;
+  border: 1px solid #cc0000; */
+  margin-top: 35px;
+ 
+}
+.popup_box_error .btns-error .btnError:hover{
+  transition: .5s;
+  background: #8c8c8c;
+}
