@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import Modal from './Modal';
+import $ from 'jquery';
 // import emailjs from "emailjs-com";
 
 export const ContactExtend = (props) =>{
@@ -9,29 +10,28 @@ export const ContactExtend = (props) =>{
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [company, setCompany] = useState('');
+    const [message, setMessage] = useState('');
+   /*message, setMessgae*/ 
 
     function sendEmail(e){
         e.preventDefault();
         axios.post(`https://rebornit.herokuapp.com/API/rebornit/contactus`, { 
             name:name,
-            emailAddress:email,
-            msgType:"Sample",
+            email:email,
             phone:phone,
-            company : company
+            message : message
         })
         .then(res => {
             console.log(res);
             console.log(res.data);
+            if(res.data.status==200){
+                popup();
+            }else if(res.data.status!=200){
+                Errorpopup();
+            }
             
             
             
-
-                
-               
-              
-              
-
             
             // setModalOpen(true);
             // {alert("RebornIT will contact you very soon !!! ")}
@@ -50,27 +50,36 @@ export const ContactExtend = (props) =>{
 
    
 
-    // function popup(){
-    //     $.ajax({
-    //         $(document).ready(
-    //             function(){
-    //               $('.btn').click(
-    //              function(){
-    //                $('.popup_box').css("display", "block");
-    //              });
-    //              $('.btn1').click(function(){
-    //                $('.popup_box').css("display", "none");
-    //              });
-    //              $('.btn2').click(function(){
-    //                $('.popup_box').css("display", "none");
-    //                alert("Account Permanently Deleted.");
-    //              });
-    //            });
+    function popup(){
+            $(document).ready(
+                function(){
+                  $('#contactbtn').click(
+                 function(){
+                   $('.popup_box').css("display", "block");
+                 });
+                 $('.btn1').click(function(){
+                   $('.popup_box').css("display", "none");
+                 });
+                
+               });
+            }
 
-    //     })
-     
-    // }
+            function Errorpopup(){
+                $(document).ready(
+                    function(){
+                      $('#contactbtn').click(
+                     function(){
+                       $('.popup_box_error').css("display", "block");
+                     });
+                    
+                   });
+                }
               
+                function closepopup(){
+                    $('.btnError').click(function(){
+                        $('.popup_box_error').css("display", "none");
+                      });
+                }
 
         return(
         <div>
@@ -95,7 +104,7 @@ export const ContactExtend = (props) =>{
                 <div> <input type="text" name="name" placeholder="Your Name" onChange={event => setName(event.target.value)} required/></div>
                 <div> <input type="tel" name="tele" placeholder="Phone Number" onChange={event => setPhone(event.target.value)} required/></div>
                 <div><input type="email" name="email" placeholder="Email Address" onChange={event => setEmail(event.target.value)} required/></div>
-                <div><textarea name="cname" placeholder="Description" onChange={event => setCompany(event.target.value)} required/> </div>
+                <div><textarea name="message" placeholder="Description" onChange={event => setMessage(event.target.value)} required/> </div>
                  <div class="btnDiv"><input type='submit' className='btn btn-primary btn-lg' id="contactbtn" onClick= {sendEmail}/> 
                 {/* <div class="btnDiv"><input type='submit' className='btn btn-primary btn-lg' id="contactbtn"  onClick={() => {
                     setModalOpen(true);
@@ -111,7 +120,17 @@ export const ContactExtend = (props) =>{
                         {/* <i class="fa fa-exclamation-circle" aria-hidden="true"></i> */}
                         {/* <label>RebornIT will contact you soon</label> */}
                             
-                </div>
+                     </div>
+
+
+                     <div class="popup_box_error">
+                   
+                        <h3>Something went wrong!</h3>
+                         <div class="btns-error">
+                            <a href="#contactExtend" class="btnError" onClick={closepopup}>OK</a>
+                         </div>
+                            
+                     </div>
                
                 
                
