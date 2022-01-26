@@ -67,18 +67,12 @@ export const Contact = (props) => {
 
                               <div className="innerContactDivRight">
                                 <div>
-                                <a  href='#contactExtend'>
-                                  <button type='submit' className='btn btn-custom page-scroll' id="contactbtn" onClick='#contactExtend'>
+                                {/* <a  href='#contactExtend'>
+                                  <button type='submit' className='page-scrol' id="contactbtn" onClick='contactExtend'>
                                     Start a Project
-                                    </button></a>
+                                    </button></a> */}
                                     
-                                  
-                                   {/* <a
-                                  href='#contactExtend'
-                                  className='btn btn-custom btn-lg page-scroll'
-                                >
-                                Start a Project
-                                </a>{' '} */}
+                                
                                 </div>
                               </div>
                             </aside>
