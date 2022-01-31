@@ -432,7 +432,7 @@ a:focus,
   text-align: center;
 }
 
-#collapseOne, #collapseTwo, #collapseThree{
+#collapseOne, #collapseTwo, #collapseThree, #collapseFour{
   background-color: #000000;
 }
 
@@ -1170,7 +1170,7 @@ footer{
   border: 3px solid #6415ff;
   box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
   z-index: 9999;
-  /* display: none; */
+  display: none;
 }
 .popup_box_error i{
   font-size: 25px;
@@ -1213,4 +1213,15 @@ footer{
 .popup_box_error .btns-error .btnError:hover{
   transition: .5s;
   background: #8c8c8c;
+}
+/*Gallery*/
+
+.TypewriterDiv{
+  font-family:'Roboto', sans-serif;
+  font-size: 600%;
+  font-weight: 500;
+  color: black;
+  margin-top: 7%;
+  text-shadow: brown;
+  
 }

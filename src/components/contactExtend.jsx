@@ -26,7 +26,7 @@ export const ContactExtend = (props) =>{
             console.log(res.data);
             if(res.data.status==200){
                 popup();
-            }else if(res.data.status!=200){
+            }else if(res.data.status==400){
                 Errorpopup();
             }
             
