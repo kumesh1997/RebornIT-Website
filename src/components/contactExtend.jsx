@@ -156,8 +156,46 @@ export const ContactExtend = (props) =>{
             </div>
         </div>
 
+                    
+       <footer className='footer'>
+           <div className='container-footer'>
+               <div className='rowFooter'>
+               <div class="footer-col">
+  	 			<img src="img/LOGO.png" alt="image" width="100%" height="100px"/>
+  	 		</div>
+               <div class="footer-col">
+  	 			<ul id="navBarFooter">
+  	 				<li><a href="#features">Features</a></li>
+  	 				<li><a href="#about">About</a></li>
+  	 				<li><a href="#services">Services</a></li>
+  	 			</ul>
+  	 		</div>
+
+               <div class="footer-col">
+  	 			<h4>Contact Us</h4>
+  	 			<ul>
+  	 				<li><a href="#"><span class="fa fa-phone-square">  077 4 141 768</span></a></li>
+  	 				<li><a href="mailto:www.rebornit.lk@gmail.com"><span class="fa fa-envelope" id="mailFooter" >  rebornit.lk@gmail.com</span></a></li>
+                </ul>		
+  	 		    </div>
+
+               <div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com/rebornIT-111464454651943"><img src="https://img.icons8.com/fluency/48/000000/facebook-circled.png"/></a>
+  	 				<a href="https://www.instagram.com/rebornit/"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+  	 				<a href="#"><img src="https://img.icons8.com/fluency/48/000000/linkedin-circled.png"/></a>
+  	 			</div>
+  	 		</div>
+
+               </div>
+           </div>
+       </footer>
+
+
+{/* 
         <footer class="row footer-text-black">
-        <div class="col-sm-4">077 4 141 768</div>
+        <div class="col-sm-4"><span><img src="https://img.icons8.com/fluency/48/000000/phone.png"/></span>077 4 141 768</div>
         <div class="col-sm-4"><a href="mailto:www.rebornit.lk@gmail.com">rebornit.lk@gmail.com</a></div>
         <div class="col-sm-4">
             <div className="">
@@ -166,9 +204,16 @@ export const ContactExtend = (props) =>{
                 <a target="" href=""><img src="img/linkedin.png"></img></a>
               </div>
         </div>
-     </footer>
+     </footer> */}
      
-    
+     <div id='footer'>
+            <div className='text-center'>
+             <p>
+                &copy; 2021 <span>rebornIT</span>. Designed by <span>rebornIT</span>
+                
+              </p>
+            </div>
+            </div>
 
         </div>
     );

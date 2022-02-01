@@ -97,7 +97,7 @@ h4 {
 
 h2 {
   text-transform: uppercase;
-  margin: 0 0 20px;
+  /* margin: 0 0 10px; */
   font-weight: 800;
   font-size: 36px;
   color:#6415ff;
@@ -161,13 +161,15 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 1%;
+  /* padding-top: 0%; */
   transition: all 0.8s;
 }
 #menu.navbar-default {
   background-color: #fff;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding-top: 0% !important;
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
@@ -196,7 +198,7 @@ hr {
   left: 0;
   bottom: -1px;
   width: 0;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(to right, #6415ff 0%, #5ca9fb 100%);
   content: "";
   transition: width 0.2s;
@@ -228,7 +230,7 @@ hr {
 }
 .navbar-toggle {
   border-radius: 0;
-  margin-right: 10%;
+  margin-right: 15%;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -347,11 +349,16 @@ a:focus,
   margin-bottom: 40px;
 }
 #header .intro-text {
-  padding-top: 15%;
+  padding-top: 20%;
   padding-bottom: 12%;
   
 }
 /* Features Section */
+#featureParaId{
+  align-content: justify;
+  font-size: 115%;
+  text-align: justify;
+}
 #features {
   background: #f6f6f6;
 }
@@ -369,18 +376,23 @@ a:focus,
 }
 /* About Section */
 
+#aboutText{
+  font-size: 90%;
+}
+
 .img-responsive{
   margin-left: 3%;
   vertical-align: middle !important;
   background-color: transparent;
+ 
 }
 
 #about {
-  padding: 100px 0;
+  padding: 4% 0;
   background-color: #6415ff;
 }
-#about h3 {
-  font-size: 48px;
+#about h4 {
+  font-size: 200%;
   margin: 0 0 30px;
   margin-left: 100px;
   margin-right: 100px;
@@ -433,7 +445,12 @@ a:focus,
 }
 
 #collapseOne, #collapseTwo, #collapseThree, #collapseFour{
-  background-color: #000000;
+  background-color: #ffffff;
+  color: #000000;
+  /* font-weight: bolder; */
+  font-size: 100%;
+  text-align: justify;
+  padding: 0 10% 0 5%;
 }
 
 #accordion .card-body {
@@ -444,10 +461,11 @@ a:focus,
 
 #services #expolreBtn{
   margin: 20px 0;
-  background: transparent;
-  border: 2px solid #6415ff;
+  background: #5ca9fb;
+  /* border: 2px solid #6415ff; */
   color: #000000;
   font-size: 20px;
+  padding: 1%;
 }
 
 #services #expolreBtn:hover{
@@ -500,7 +518,7 @@ a:focus,
 }
 
 #services {
-  padding: 100px 0;
+  padding: 30px 0 35px;
   background-color: white;
   color: #fff;
   
@@ -561,7 +579,7 @@ a:focus,
   display: inline;
 }
 #portfolio {
-  padding: 100px 0;
+  padding: 20px 0;
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
@@ -1223,5 +1241,112 @@ footer{
   color: black;
   margin-top: 7%;
   text-shadow: brown;
+  position: relative;
+  
   
 }
+
+
+/*New Footer*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+	/* margin:0;
+	padding:0;
+	box-sizing: border-box; */
+}
+.container-footer{
+	/* max-width: 1170px;*/
+	margin:auto; 
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+  background-color: #6415ff;
+  width: 105.5%;
+}
+.rowFooter{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col ul{
+	list-style: none;
+}
+.footer{
+	background-color: #6415ff;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+    font-weight: 400;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+/* .footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+} */
+.footer-col .social-links a:hover{
+
+}
+
+#mailFooter{
+  text-transform: none;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+

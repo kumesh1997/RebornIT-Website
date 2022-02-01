@@ -4,7 +4,7 @@ export const About = (props) => {
       
             {" "}
             <img src="img/LOGO.png" className="img-responsive" alt="" />{" "}
-            <h3>{props.data ? props.data.paragraph : "loading..."}</h3>
+            <h4>{props.data ? props.data.paragraph : "loading..."}</h4>
          
     </div>
   );

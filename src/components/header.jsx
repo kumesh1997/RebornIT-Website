@@ -70,7 +70,7 @@ export const Header = (props) => {
                 
               </div> */}
 
-<footer class="row footer-text-black">
+{/* <footer class="row footer-text-black">
         <div class="col-sm-6 contactNumberLanding">077 4 141 768</div>
         
         <div class="col-sm-6">
@@ -80,7 +80,7 @@ export const Header = (props) => {
                 <a target="" href=""><img src="img/linkedin.png"></img></a>
               </div>
         </div>
-     </footer>
+     </footer> */}
           </div>
         </div>
       </div>

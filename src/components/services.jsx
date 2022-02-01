@@ -3,9 +3,9 @@ export const Services = (props) => {
     <div id='services' className='text-center'>
       <div className=''>
         <div className='section-title'>
-          <h2>A reputation for delivering
-          <div className="blueText">fast-turnaround, high-end</div>
-          content</h2>
+          <h2>Every <span className="blueText">'customer' </span>receives a <span className="blueText">'tailor made'</span> 
+          <div>solution that is tailored to their individual needs</div>
+          {/* <div className="blueText">fast-turnaround, high-end</div> */}</h2>
           
         </div>
         <div className='row'>
@@ -77,11 +77,11 @@ export const Services = (props) => {
 
 
 
-                       <div>
+                       {/* <div>
                             <button type='submit' className='' id="expolreBtn">
                             EXPLORE YOUR IDEAS  <img src="img/moveright.png"></img> 
                             </button>
-                         </div>
+                         </div> */}
                   
                 </div>
 
