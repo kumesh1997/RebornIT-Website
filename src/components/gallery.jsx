@@ -13,11 +13,11 @@ export const Gallery = (props) => {
           
         </div>
         
-        <h1 className='TypewriterDiv' id="TypewriterDiv">
-          <Typewriter 
+        <h2 className='TypewriterDiv' id="TypewriterDiv">
+          <Typewriter
           options={{
             strings: ["DON'T STRUGGLE WITH YOUR IDEA.",
-                      'JOIN <strong><span style="color:#6415ff;">rebornIT</span></strong> TO MAKE IT REAL.'
+                      'JOIN <strong><span style="color:#6415ff; text-transform:none">rebornIT</span></strong> TO MAKE IT REAL.'
                     ],
             autoStart: true,
             loop: true,
@@ -38,14 +38,14 @@ export const Gallery = (props) => {
             
           // }
           // }
-          />
+          / >
 
           {/* <div className='portfolio-items'>
            <video controls width="90%" height="440" loop>
               <source src="img/demoVideo.mp4" type="video/mp4" id="video"></source>
            </video> 
           </div> */}
-        </h1>
+        </h2>
       </div>
     </div>
   )
