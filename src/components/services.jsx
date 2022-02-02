@@ -21,8 +21,7 @@ export const Services = (props) => {
                    </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                    <div class="accordion-body">
-                  We create your unique branding with a stylish design and authentic values for a unique, digital brand presence. We use innovative and breakthrough technologies in web design and development to bring degital solutions to life.
-                  We produce outstanding content for you and transform your budget into qualified new customers with the performance marketing nerds.
+                   We combine latest technology with innovative concepts to ensure that your website would be of the highest possible quality, with a 100% satisfaction guarantee.
                 </div>
               </div>
              </div>

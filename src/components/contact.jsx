@@ -37,12 +37,12 @@ export const Contact = (props) => {
       <div id='contact'>
 
       <div className="row no-gutters">
-                  <div className="col-md-4"><div className="leftside">
+                  {/* <div className="col-md-4"><div className="leftside">
                     <div className="contactBG">
                       <img src="img/contactBG.png" alt="image" width="98%" height="660px"></img>
                     </div>
                   </div>
-                  </div>
+                  </div> */}
 
                   <div className="col-md-8">
                    
@@ -61,6 +61,7 @@ export const Contact = (props) => {
                             </div>
 
                             <aside className="col-sm">
+                              
                               <div>
                                 <img src="img/LOGO.png" width="300px"></img>
                               </div>
@@ -94,9 +95,7 @@ export const Contact = (props) => {
                    </div>
                </div>
 
-               <div className='row'>
-
-            </div>
+            
 
                   
                     </div>
