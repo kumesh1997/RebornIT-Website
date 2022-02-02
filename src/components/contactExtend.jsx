@@ -86,9 +86,9 @@ export const ContactExtend = (props) =>{
         <div className="container">
             <div id="contactExtend" className="">
 
-        <header class="comapnyLogo raw">
+        {/* <header class="comapnyLogo raw">
             <img src="img/LOGO.png" alt="logo"></img>
-        </header>
+        </header> */}
 
     <div class="">   
     <div class="raw">
@@ -160,10 +160,17 @@ export const ContactExtend = (props) =>{
        <footer className='footer'>
            <div className='container-footer'>
                <div className='rowFooter'>
-               <div class="footer-col">
+               <div class="footer-col footerCenterText">
   	 			<img src="img/LOGO.png" alt="image" width="100%" height="100px"/>
+                   <div className='footerSpanTextDiv'>
+                   <span id="footerSpanText"style={{"padding":"none"}}>We are rebornIT. We do Web application <span>development, Website development,
+Mobile application development and UI design.</span></span>
+                   </div>
+                   
   	 		</div>
-               <div class="footer-col">
+
+              
+               <div class="footer-col textDownShift">
   	 			<ul id="navBarFooter">
   	 				<li><a href="#features">Features</a></li>
   	 				<li><a href="#about">About</a></li>
@@ -171,7 +178,7 @@ export const ContactExtend = (props) =>{
   	 			</ul>
   	 		</div>
 
-               <div class="footer-col">
+               <div class="footer-col textDownShift">
   	 			<h4>Contact Us</h4>
   	 			<ul>
   	 				<li><a href="#"><span class="fa fa-phone-square">  077 4 141 768</span></a></li>
@@ -179,7 +186,7 @@ export const ContactExtend = (props) =>{
                 </ul>		
   	 		    </div>
 
-               <div class="footer-col">
+               <div class="footer-col textDownShift">
   	 			<h4>follow us</h4>
   	 			<div class="social-links">
   	 				<a href="https://www.facebook.com/rebornIT-111464454651943"><img src="https://img.icons8.com/fluency/48/000000/facebook-circled.png"/></a>

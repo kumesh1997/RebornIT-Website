@@ -34,7 +34,7 @@ const App = () => {
       {/* <Team data={landingPageData.Team} /> */}
       <Gallery data={landingPageData.Gallery}/>
       <Services data={landingPageData.Services} />
-      <Contact data={landingPageData.Contact} />
+      {/* <Contact data={landingPageData.Contact} /> */}
       <ContactExtend data={landingPageData.EmailConatct}/>
     </div>
   );
